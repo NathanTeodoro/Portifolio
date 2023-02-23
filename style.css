@@ -11,6 +11,8 @@ body{
         55deg, black 60%, rgb(09, 29 , 66));
         background-repeat: no-repeat;
     font-family:'Trebuchet MS', sans-serif;
+    background-size: auto;
+    overflow-y: scroll;
 }
 a{
     text-decoration: none;
@@ -48,7 +50,7 @@ img{
 #about{ 
     border: 3px solid transparent;
     display: inline-block;
-    position: static;
+    position: relative;
     color: aqua;
     text-align: center;
     padding: 10px;
@@ -108,22 +110,47 @@ h1{
         font: 10vh;
     }
     #about{
+        padding: auto;
+        width: 100%;
         font-size: 100%;
         display: block;
-        position: static;
-        text-align: center;
-        padding: none;
-        justify-content: center;
-        
+        position: relative;
+        margin-top: 35px;
+        margin-left: 0;
+        margin-right: 0;
+        width: 380px;
+        height: max-content;
     }
     #icons{
         display: block;
         margin-top: 35px;
         margin-left: auto;
         margin-right: auto;
+        width: 350px;
+        height: max-content;
     }
     .icon{
-        width: 20%;
+        width: 4vh;
+        margin: 4%;
        
+    }
+    #projetcs{
+        display: flex;
+        flex-direction: row;
+        color: aqua;
+        width: 100%;
+       
+    }
+    .pages_img{
+        border: 3px solid white;
+        border-image: var(--var_border_color) 2;
+        width: 20vh;
+        
+    
+    }
+    .project{
+        margin: auto;
+        padding-bottom: 30px;
+    
     }
 }
