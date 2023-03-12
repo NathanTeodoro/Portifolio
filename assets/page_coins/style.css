@@ -71,3 +71,36 @@ select{
     background-color: rgb(212, 212, 212);
 }
 
+@media screen and (max-width:500px){
+    input , select{
+        justify-content: space-between;
+        margin: 3vh;
+        font-size: 3vh;
+        width: 40vh;
+        height: 10vh;
+        text-align: center;
+        text-transform: uppercase .5s;
+        background-color: aliceblue;
+        border-radius: 15px;
+        line-height: 50%;
+        align-items: center;
+    }
+
+    #result{
+    
+        flex-direction: row;
+        
+        width: 50vh;
+        position: relative;
+        background-color: rgb(70, 170, 70);
+        border-radius: 20px;
+        display: inline-block;
+        position: fixed;
+        bottom: 20vmax;
+        left: -3px;
+        margin: 0;
+        text-align: center;
+        
+    }
+
+}
