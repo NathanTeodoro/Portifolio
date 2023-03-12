@@ -86,11 +86,12 @@ img{
     width: 100%;
    
 }
-.pages_img{
+.pages_img{display: flex;
+    flex-wrap: wrap;
     border: 3px solid white;
     border-image: var(--var_border_color) 2;
     width: 25vw;
-    
+    height: 23vw;
 
 }
 h1{
@@ -101,6 +102,7 @@ h1{
    
 }
 .project{
+    flex-wrap: wrap;
     margin: auto;
     padding-bottom: 30px;
 
@@ -112,13 +114,13 @@ h1{
     #about{
         padding: auto;
         width: 100%;
-        font-size: 100%;
+        font-size: 90%;
         display: block;
         position: relative;
         margin-top: 35px;
-        margin-left: 0;
-        margin-right: 0;
-        width: 380px;
+        margin-left: 10%;
+        margin-right: 10%;
+        width: calc(100% - 25%);
         height: max-content;
     }
     #icons{
@@ -131,24 +133,27 @@ h1{
     }
     .icon{
         width: 4vh;
-        margin: 4%;
-       
+        margin: 5,5%;
+    
     }
     #projetcs{
+        align-items: center;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         color: aqua;
-        width: 100%;
-       
+        width: calc(100% - 50%);
+        margin: auto;
     }
     .pages_img{
+        align-items: center;
         border: 3px solid white;
         border-image: var(--var_border_color) 2;
         width: 20vh;
-        
+        height: auto;
     
     }
     .project{
+        align-items: center;
         margin: auto;
         padding-bottom: 30px;
     

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="painel">
+        <h1 id="head">Coversor de Moedas</h1>
+        <form>
+        <div class="inputs">
+            <select id="input1" size="1">
+                <option value="" selected>none</option>
+                <option value="USD">Dolar</option>
+                <option value="BRL">Real</option>
+                <option value="EUR">Euro</option>
+                <option value="BTC">Bitcoin</option>
+            </select>
+           <!-- <input type="number" placeholder="Quantidade">-->
+        </div>
+        <div class="inputs">
+            <select id="input2" size="1" onchange="changeSelect()">
+                <option value="" selected>none</option>
+                <option value="USD">Dolar</option>
+                <option value="BRL">Real</option>
+                <option value="EUR">Euro</option>
+                <option value="BTC">Bitcoin</option>
+                
+            </select>
+            <!--<input type="number" placeholder="Quantidade">-->
+            </div>
+       
+           <!-- <input type="submit" value="Converter" onclick="main()">-->
+     
+        </form>
+    </div>
+
+    <div id="result"></div>
+
+</body>
+</html>
