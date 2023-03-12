@@ -92,10 +92,11 @@ footer{
         width: max-content;
         float: none;
     }
-    section{
-        
+    .description{
+        width: calc(100% - 20%);
+        margin: 0%;
+        max-width: 80%;
     }
-   
 
 
 
