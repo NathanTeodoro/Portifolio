@@ -150,7 +150,7 @@ h1{
         border-image: var(--var_border_color) 2;
         width: 20vh;
         height: auto;
-    
+        margin: auto;
     }
     .project{
         align-items: center;
