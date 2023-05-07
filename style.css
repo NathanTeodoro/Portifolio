@@ -83,8 +83,9 @@ img{
     display: flex;
     flex-direction: row;
     color: aqua;
-    width: 100%;
-   
+    justify-content:center ;
+    flex-shrink: 1;
+    flex-flow: wrap;
 }
 .pages_img{display: flex;
     flex-wrap: wrap;
@@ -102,10 +103,9 @@ h1{
    
 }
 .project{
-    flex-wrap: wrap;
-    margin: auto;
     padding-bottom: 30px;
-
+    padding: 20px;
+    
 }
 @media screen and (max-width:700px) {
     :root{

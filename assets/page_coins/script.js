@@ -28,9 +28,12 @@ function changeSelect(input01,input02,urlparam){
     let brute = Get("https://economia.awesomeapi.com.br/last/"+input01+'-'+input02);
 
     let dados = JSON.parse(brute);
-        function nodoc(){
-        document.getElementById("result").innerHTML = "CONVERSÂO:"+dados[urlparam].name+"<br>"+"ALTA:"+dados[urlparam].high+"<br>"+"BAIXA:"+dados[urlparam].low};      
-
+    function nodoc(){
+        let result = document.getElementById("result")
+        result.classList.remove("data-hide");
+        result.classList.add("data-show");
+        result.innerHTML = "CONVERSÂO: "+dados[urlparam].name+"<br>"+"ALTA: "+dados[urlparam].high+"<br>"+"BAIXA: "+dados[urlparam].low}      
+ 
     nodoc()
     
     console.log(input01,input02)

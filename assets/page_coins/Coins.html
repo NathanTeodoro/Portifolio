@@ -1,19 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <script src="script.js" defer></script>   
 </head>
 <body>
     <div id="painel">
+        <img src="../images/stack-coins.png" alt="pilha moedas" class="coin">
         <h1 id="head">Coversor de Moedas</h1>
         <form>
         <div class="inputs">
             <select id="input1" size="1">
-                <option value="" selected>none</option>
+                <option value="" selected>Selecione uma moeda</option>
                 <option value="USD">Dolar</option>
                 <option value="BRL">Real</option>
                 <option value="EUR">Euro</option>
@@ -23,7 +25,7 @@
         </div>
         <div class="inputs">
             <select id="input2" size="1" onchange="changeSelect()">
-                <option value="" selected>none</option>
+                <option value="" selected>Selecione uma moeda</option>
                 <option value="USD">Dolar</option>
                 <option value="BRL">Real</option>
                 <option value="EUR">Euro</option>
@@ -38,7 +40,7 @@
         </form>
     </div>
 
-    <div id="result"></div>
+    <div id="result" class="data-hide"></div>
 
 </body>
 </html>

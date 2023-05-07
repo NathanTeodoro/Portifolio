@@ -3,6 +3,7 @@
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: inline-block;
+    background-color: rgb(34, 34, 34);
 }
 #head{ 
     flex-direction: row;
@@ -16,30 +17,37 @@
 #painel{
     flex-direction: row;
     text-align: center;
-    position: absolute;
     border-radius: 30px;
+   justify-content: center;
+}
+.coin{
+    position: absolute;
+    left: 100px;
+    float: left;
+    width: 100px;
+    
 }
 #result{
-   
+    padding-top: 8px;
+    font-size: 35px;
     flex-direction: row;
-    width: 50vh;
+    width: 80vw;
+    height: 30vh;
     position: relative;
     background-color: rgb(70, 170, 70);
     border-radius: 20px;
     display: inline-block;
     position: fixed;
-    bottom: 30vmax;
-    border: red;
-    left: calc(100% - 53vh);
-    
+    bottom: 10vmax;
+    left: calc(100% - 90%);
     text-align: center;
     
 }
 .inputs{
    
     flex-direction: row;
-    position: relative;
-    
+    position: static;
+    align-self: center;
 }
 [value="Converter"]{
     width: 50vmax;
@@ -70,7 +78,16 @@ select{
 [type="number"]{
     background-color: rgb(212, 212, 212);
 }
-
+title{
+    visibility: hidden;
+    padding: 15px;
+}
+.data-show{
+    opacity: 1;
+}
+.data-hide{
+    opacity: 0;
+}
 @media screen and (max-width:500px){
     input , select{
         justify-content: space-between;
@@ -87,20 +104,31 @@ select{
     }
 
     #result{
-    
+        font-size: 15px;
         flex-direction: row;
-        
-        width: 50vh;
+        padding-top: 5px;
+        width: 45vh;
+        height: 10vh;
         position: relative;
         background-color: rgb(70, 170, 70);
         border-radius: 20px;
         display: inline-block;
         position: fixed;
         bottom: 20vmax;
-        left: -3px;
+        left: 11px;
         margin: 0;
         text-align: center;
         
     }
 
+    title{
+        visibility: hidden;
+        
+    }
+    .coin{
+        position: absolute;
+        left: 10px;
+        float: left;
+        width: 48px;
+    }
 }
