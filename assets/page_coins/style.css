@@ -38,7 +38,7 @@
     border-radius: 20px;
     display: inline-block;
     position: fixed;
-    bottom: 10vmax;
+    bottom: 20vh;
     left: calc(100% - 90%);
     text-align: center;
     
