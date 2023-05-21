@@ -103,12 +103,21 @@ img{
     color: rgb(255, 0, 0);
     padding: 3px;
 }
-
 .hidediv{
     display: none;
 }
+@keyframes slow{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
 .showdiv{
     display: block;
+    animation-name: slow;
+    animation-duration: .5s;
 }
 #icons{
     display: inline-block;
@@ -119,8 +128,8 @@ img{
    
     background-image:linear-gradient( 
     65deg,
-    rgb(9, 29, 66),
-    black 60%);
+    black,
+    rgb(9, 29, 66) 60%);
     margin-top: 10px;
 }
 .icon{
@@ -158,6 +167,10 @@ h1{
     padding-bottom: 30px;
     padding: 20px;
     
+}
+.project:hover{
+    transform: scale3d(1.5,1.5,1.5);
+    transition-duration: .4s;
 }
 @media screen and (max-width:700px) {
     :root{
