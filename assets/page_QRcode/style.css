@@ -21,10 +21,10 @@ body{
     margin: 1em;
     width: 35vw;
     height: 10vh;
-    border: 1px purple solid;
+    border: 1px rgba(128, 0, 128, 0.342) solid;
     border-radius: 25px;
     background-image:rgb(2,0,36);
-    background: linear-gradient(90deg, rgb(168, 168, 173) 0%, rgba(124, 68, 145, 0.785) 100%);
+    background: linear-gradient(90deg, rgb(168, 168, 173) 0%, rgba(109, 99, 112, 0.785) 100%);
     color: rgb(247, 247, 247);
 }
 .btn{
@@ -55,7 +55,7 @@ img{
         border: 1px purple solid;
         border-radius: 25px;
         background-image:rgb(2,0,36);
-        background: linear-gradient(90deg, rgb(168, 168, 173) 0%, rgba(124, 68, 145, 0.785) 100%);
+        background: linear-gradient(90deg, rgb(168, 168, 173) 0%, rgba(92, 83, 95, 0.785) 100%);
         color: rgb(247, 247, 247);
     }
 

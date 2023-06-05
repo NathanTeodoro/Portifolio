@@ -16,6 +16,7 @@ input{
 body{
  background-image: url(Churrasco!!!!_\(4474513078\).jpg);
 background-size: cover;
+background-repeat: no-repeat;
 }
 button{
 border-radius: 10px;
@@ -23,4 +24,9 @@ color: aliceblue;
 background-color: brown;
 margin-top: 10px;
 font-size: 15px;
+}
+@media screen and (max-width:900px){
+    body{
+        background-size: auto;
+    }
 }

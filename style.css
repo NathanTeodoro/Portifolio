@@ -1,7 +1,7 @@
 :root{
     --var_size_box:calc(45%);
     --var_border_color:linear-gradient(35deg,rgb(10, 54, 150), rgb(9, 190, 145) 60%, rgb(1, 5, 12));
-
+    --var_border_color2:linear-gradient(35deg,rgba(0, 0, 0, 0.192), rgb(74, 218, 182) 60%, rgb(43, 86, 161));
 }
 body{
     margin: 0;
@@ -76,7 +76,7 @@ img{
     color: aqua;
     text-align: center;
     padding: 10px;
-    font-size: 2vw;
+    font-size: 1.8vw;
     width: var(--var_size_box);
     line-height: calc(20% max-content);
 }
@@ -87,9 +87,12 @@ img{
 .about-tech div{
     margin: 10px;
     border: 2px solid white;
-    border-image: var(--var_border_color) 2;
+    border-image: var(--var_border_color2) 2;
+    background-color: linear-gradient(
+        55deg, rgb(23, 200, 206) 60%, rgb(9, 30, 70));
     color: aqua;
     padding: 10px;
+    transform:scale(1.1)
 }
 .about-tech button{
     background-color: transparent;
@@ -105,6 +108,7 @@ img{
 }
 .hidediv{
     display: none;
+    transition: ease-in-out .5s;
 }
 @keyframes slow{
     from{
@@ -145,15 +149,17 @@ img{
     flex-direction: row;
     color: aqua;
     justify-content:center ;
+    align-items: center;
     flex-shrink: 1;
     flex-flow: wrap;
 }
-.pages_img{display: flex;
+.pages_img{
+    display: flex;
     flex-wrap: wrap;
     border: 3px solid white;
     border-image: var(--var_border_color) 2;
     width: 25vw;
-    height: 23vw;
+    height: 45vh;
 
 }
 h1{
@@ -164,8 +170,9 @@ h1{
    
 }
 .project{
-    padding-bottom: 30px;
-    padding: 20px;
+    padding-bottom: 40px;
+    padding: 10px;
+    width: 27vw;
     
 }
 .project:hover{
@@ -193,7 +200,7 @@ h1{
     #about{
         padding: auto;
         width: 100%;
-        font-size: 90%;
+        font-size: 100%;
         display: block;
         position: relative;
         margin-top: 35px;
@@ -217,12 +224,13 @@ h1{
     
     }
     #projetcs{
-        align-items: center;
         display: flex;
+        align-items: center;
+        justify-content: center;
         flex-direction: column;
         color: aqua;
-        width: calc(100% - 50%);
-        margin: auto;
+        width: 80%;
+        margin: 1em;
     }
     .pages_img{
         align-items: center;
@@ -236,6 +244,17 @@ h1{
         align-items: center;
         margin: auto;
         padding-bottom: 30px;
-    
+        width: 85vw;
+        justify-content: center;
+    }
+    .project p {
+        padding: 2px;
+        width: 85vw;
+    }
+    .project h2{
+        position: relative;
+        left: auto;
+        right: auto;
+       translate: 20%;
     }
 }
