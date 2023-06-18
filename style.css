@@ -1,5 +1,5 @@
 :root{
-    --var_size_box:calc(45%);
+    --var_size_box:calc(48%);
     --var_border_color:linear-gradient(35deg,rgb(10, 54, 150), rgb(9, 190, 145) 60%, rgb(1, 5, 12));
     --var_border_color2:linear-gradient(35deg,rgba(0, 0, 0, 0.192), rgb(74, 218, 182) 60%, rgb(43, 86, 161));
 }
@@ -58,10 +58,11 @@ img{
     padding: 10px;
     margin: 5px;
     color: aqua;
-    
-    
+    margin-bottom: 2em;
+    font-size: medium;
 }
 .button:hover{
+    transition: .5s;
     background-color: aqua;
     color: black;
     border: 2px solid white;
@@ -76,9 +77,16 @@ img{
     color: aqua;
     text-align: center;
     padding: 10px;
+    margin-left: 8px;
     font-size: 1.8vw;
     width: var(--var_size_box);
     line-height: calc(20% max-content);
+    background: rgba(31, 128, 182, 0.18);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0);
+    backdrop-filter: blur(0.7px);
+    -webkit-backdrop-filter: blur(0.7px);
+    border: 1px solid rgba(31, 128, 182, 0.39);
 }
 .about-tech{
     margin: auto;
@@ -87,12 +95,16 @@ img{
 .about-tech div{
     margin: 10px;
     border: 2px solid white;
-    border-image: var(--var_border_color2) 2;
-    background-color: linear-gradient(
-        55deg, rgb(23, 200, 206) 60%, rgb(9, 30, 70));
-    color: aqua;
+    background: rgba(31, 128, 182, 0.18);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0.7px);
+    -webkit-backdrop-filter: blur(0.7px);
+    border: 1px solid rgba(31, 128, 182, 0.39);
     padding: 10px;
-    transform:scale(1.1)
+    transform:scale(1.1);
+    color: aqua;
+    
 }
 .about-tech button{
     background-color: transparent;
@@ -124,25 +136,33 @@ img{
     animation-duration: .5s;
 }
 #icons{
-    display: inline-block;
     position: relative;
     width: var(--var_size_box);
     border: 2px solid white;
     border-image: var(--var_border_color) 2;
-   
-    background-image:linear-gradient( 
-    65deg,
-    black,
-     60%);
-    margin-top: 10px;
+    background: rgba(31, 128, 182, 0.18);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0.7px);
+    -webkit-backdrop-filter: blur(0.7px);
+    border: 1px solid rgba(31, 128, 182, 0.39);
+    display: inline-flex;
+    align-items: center;    
+    flex-direction: row;
+    justify-content: space-between;
 }
 .icon{
-    width: 4.1vw;
-    margin-top: 6.5%;
-    margin-bottom: 7%;
-    margin-right: 5%;
-    margin-left: 5%;
+    width: 5vw;
+    height: 12vh;
     cursor: pointer;
+    position: relative;
+    margin: 4px;
+    padding: 3.9%;
+    padding-top: 4vh;
+    padding-bottom: 8hv;
+}
+.icon:hover{
+    transform: scale3d(1.1,1.1,1.1);
 }
 #projetcs{
     display: flex;
@@ -176,9 +196,15 @@ h1{
     
 }
 .project:hover{
-    transform: scale3d(1.1,1.1,0.5);
+    background: rgba(31, 128, 182, 0.18);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0.7px);
+    -webkit-backdrop-filter: blur(0.7px);
+    border: 1px solid rgba(31, 128, 182, 0.39);
     transition-duration: .4s;
 }
+
 @media screen and (max-width:700px) {
     :root{
         font: 10vh;
@@ -218,10 +244,12 @@ h1{
         height: max-content;
     }
     .icon{
-        width: 7vw;
+        width: 9vw;
+        height: 6vh;
         justify-content: center;
         align-items: center;
-    
+        margin: 1px;
+        padding: 3.5%;
     }
     #projetcs{
         display: flex;
