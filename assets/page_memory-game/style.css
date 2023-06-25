@@ -81,6 +81,6 @@ body{
 }
 @media screen and (max-width: 500px) {
     #gameboard{
-        margin-top: 25%;
+        margin-top: 150px;
     }
 }
