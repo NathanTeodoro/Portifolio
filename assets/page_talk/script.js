@@ -1,12 +1,10 @@
-const input = document.querySelector("#text").value;
+const input = document.querySelector("#text");
 const btn = document.getElementById("t-button");
-
 btn.addEventListener('click',()=>{
-    let v = SpeechSynthesisUtterance(input)
+    let v = new SpeechSynthesisUtterance(input.value)
     v.lan = 'pt-br'
-    v.pitch = 2
-    v.rate = 1
-
-    new  speechSynthesis.speak(v)
-    console.log(input)
+    v.pitch = 1
+    v.volume = 0.5
+    speechSynthesis.speak(v)
+    console.log(input.value)
 });
