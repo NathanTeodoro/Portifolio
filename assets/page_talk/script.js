@@ -1,10 +1,26 @@
 const input = document.querySelector("#text");
 const btn = document.getElementById("t-button");
+const btn2 = document.getElementById("l-button");
+const pitch = document.getElementById("pitch");
+const volume = document.getElementById("volume");
+const rate = document.getElementById("rate");
+
 btn.addEventListener('click',()=>{
-    let v = new SpeechSynthesisUtterance(input.value)
-    v.lan = 'pt-br'
-    v.pitch = 1
-    v.volume = 0.5
+    var v = new SpeechSynthesisUtterance(input.value)
+    v.lang = 'pt-PT'
+   
+    v.pitch = pitch.value
+    v.volume = volume.value
+    v.rate = rate.value
+
     speechSynthesis.speak(v)
-    console.log(input.value)
+
+   
+});
+
+btn2.addEventListener('click',()=>{
+    let r = new SpeechRecognition()
+    
+    let t = new SpeechRecognitionAlternative.transcipt
+    console.log(t)
 });
