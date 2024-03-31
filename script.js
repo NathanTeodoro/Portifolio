@@ -5,11 +5,11 @@ let ihtml = document.querySelector(".a_html")
 let icss = document.querySelector(".a_css")
 let inode = document.querySelector(".a_node")
 let ipython = document.querySelector(".a_python")
-let iangular = document.querySelector(".a_python")
-let itypescript = document.querySelector(".a_python")
-let iflask = document.querySelector(".a_python")
-let imysql = document.querySelector(".a_python")
-let imongodb = document.querySelector(".a_python")
+let iangular = document.querySelector(".a_angular")
+let itypescript = document.querySelector(".a_typescript")
+let iflask = document.querySelector(".a_flask")
+let imysql = document.querySelector(".a_mysql")
+let imongodb = document.querySelector(".a_mongodb")
 
 const hidediv = "hidediv";
 const showdiv = "showdiv";
