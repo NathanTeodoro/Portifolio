@@ -10,7 +10,7 @@ body{
     padding: 0;
     box-sizing: border-box;
     background-image: linear-gradient(
-        55deg, black 60%, rgb(09, 29 , 66));
+        55deg, black 60%, #090f16);
         background-repeat: no-repeat;
     font-family:'Trebuchet MS', sans-serif;
     background-size: auto;
@@ -26,7 +26,7 @@ img{
     padding: 0;
 }
 #header{
-    color: aqua;
+    color: #e6ecf2;
     text-align: center;
     justify-content: center;
     letter-spacing: 5px;
@@ -59,13 +59,13 @@ img{
     border-image: var(--var_border_color) 2;
     padding: 10px;
     margin: 5px;
-    color: aqua;
+    color: #e6ecf2;
     margin-bottom: 2em;
     font-size: medium;
 }
 .button:hover{
     transition: .5s;
-    background-color: aqua;
+    background-color: #2c85dd;
     color: black;
     border: 2px solid white;
     border-image: var(--var_border_color) 2;
@@ -77,14 +77,14 @@ img{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: aqua;
+    color: #e6ecf2;
     text-align: center;
     padding: 7px;
     margin-left: 10%;
     font-size: 1.8vw;
     width: 80%;
-    background: rgba(31, 128, 182, 0.18);
-    border-radius: 16px;
+    background: #234a71;
+    border-radius: 0px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0);
     backdrop-filter: blur(0.7px);
     -webkit-backdrop-filter: blur(0.7px);
@@ -96,17 +96,17 @@ img{
     width: 90%;
 }
 .about-tech div{
+    color: #e6ecf2;
     margin: 10px;
     border: 2px solid white;
-    background: rgba(31, 128, 182, 0.18);
-    border-radius: 16px;
+    background: #2c85dd;
+    border-radius: 0px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(0.7px);
     -webkit-backdrop-filter: blur(0.7px);
     border: 1px solid rgba(31, 128, 182, 0.39);
     padding: 10px;
     transform:scale(1.1);
-    color: aqua;
     
 }
 .about-tech button{
@@ -142,8 +142,8 @@ img{
     position: relative;
     border: 2px solid white;
     border-image: var(--var_border_color) 2;
-    background: rgba(31, 128, 182, 0.18);
-    border-radius: 16px;
+    background: #1e5285;
+    border-radius: 0px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(0.7px);
     -webkit-backdrop-filter: blur(0.7px);
@@ -170,7 +170,7 @@ img{
 #projetcs{
     display: flex;
     flex-direction: row;
-    color: aqua;
+    color: #e6ecf2;
     justify-content:center ;
     align-items: center;
     flex-shrink: 1;
@@ -187,7 +187,7 @@ img{
 }
 h1{
     width: 10hv;
-    color: aqua;
+    color: #e6ecf2;
     text-align: center;
     justify-content: center;
    
@@ -200,11 +200,11 @@ h1{
 }
 .project:hover{
     background: rgba(31, 128, 182, 0.18);
-    border-radius: 16px;
+    border-radius: 0px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(0.7px);
     -webkit-backdrop-filter: blur(0.7px);
-    border: 1px solid rgba(31, 128, 182, 0.39);
+    border: 1px solid #8db4dc;
     transition-duration: .4s;
 }
 
